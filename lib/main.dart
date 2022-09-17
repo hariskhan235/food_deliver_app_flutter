@@ -1,4 +1,5 @@
-import 'package:ecommerce_flutter/home/main_food_page.dart';
+
+import 'package:ecommerce_flutter/screens/home/main_food_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

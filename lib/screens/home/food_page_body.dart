@@ -1,11 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:ecommerce_flutter/utils/colors.dart';
+import 'package:ecommerce_flutter/utils/dimenstion.dart';
 import 'package:ecommerce_flutter/widgets/big_text.dart';
 import 'package:ecommerce_flutter/widgets/icon_and_text_widget.dart';
 import 'package:ecommerce_flutter/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/dimenstion.dart';
 
 class PageFoodBody extends StatefulWidget {
   const PageFoodBody({Key? key}) : super(key: key);
