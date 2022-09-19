@@ -2,6 +2,7 @@ import 'package:ecommerce_flutter/utils/colors.dart';
 import 'package:ecommerce_flutter/utils/dimenstion.dart';
 import 'package:ecommerce_flutter/widgets/app_column.dart';
 import 'package:ecommerce_flutter/widgets/big_text.dart';
+import 'package:ecommerce_flutter/widgets/expandable_text_widget.dart';
 import 'package:ecommerce_flutter/widgets/icon.dart';
 import 'package:flutter/material.dart';
 
@@ -67,7 +68,17 @@ class FoodDetailsPage extends StatelessWidget {
                   SizedBox(
                     height: Dimensions.height20,
                   ),
-                  BigText(text: 'Introduce')
+                  BigText(text: 'Introduce'),
+                  SizedBox(
+                    height: Dimensions.height10,
+                  ),
+                  const Expanded(
+                    child: SingleChildScrollView(
+                      child: ExpandableTextWidget(
+                          text:
+                              'This is not the way to think about writing an essay!400 words is only about a page and a half. It’s not very long. 400 divided by 5 is 80 words per paragraph. But the intro and conclusion might be shorter. Maybe 50 words each? That leaves 300 for the body, so 100 words each. But more important than “How many words and how many sentences should I write?” concentrate on what you want to say! This answer was 77 words before I added this sentence. See how short that is?This is not the way to think about writing an essay!400 words is only about a page and a half. It’s not very long. 400 divided by 5 is 80 words per paragraph. But the intro and conclusion might be shorter. Maybe 50 words each? That leaves 300 for the body, so 100 words each. But more important than “How many words and how many sentences should I write?” concentrate on what you want to say! This answer was 77 words before I added this sentence. See how short that is'),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -134,7 +145,7 @@ class FoodDetailsPage extends StatelessWidget {
                 text: '\$10 | Add to cart',
                 color: Colors.white,
               ),
-            )
+            ),
           ],
         ),
       ),
